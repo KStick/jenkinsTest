@@ -13,11 +13,6 @@ pipeline {
             echo 'paralel'
           }
         }
-        stage('mail') {
-          steps {
-            mail(subject: 'Test', body: 'This is an automated test mail', from: 'super-stick@hotmail.com', to: 'super-stick@hotmail.com')
-          }
-        }
       }
     }
     stage('end') {
